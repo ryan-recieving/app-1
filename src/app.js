@@ -2,6 +2,7 @@ require("dotenv").config();
 
 const { Token, Atlas } = process.env;
 const { connect } = require("mongoose");
+const app_directorys = require("./app_external/js/app@directorys");
 const {
   Client,
   Collection,
@@ -21,7 +22,10 @@ client.commands = new Collection();
 client.cooldowns = new Collection();
 
 try {
-  client.login(Token).then(connect(Atlas)).then(console.log("Database ✅"));
+  client.login(Token).then(() => {
+    connect(Atlas).then(() => console.log("Database | ✅"));
+    app_directorys(client)
+  })
 } catch (err) {
   console.log(err);
 }
