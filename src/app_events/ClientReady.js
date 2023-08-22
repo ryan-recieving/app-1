@@ -14,7 +14,7 @@ module.exports = {
       client.user.setActivity({
         name: "Some Hoes",
         type: ActivityType.Custom,
-        state: "Stalking",
+        state: "Stalking Some Hoes",
       })
     },
   },

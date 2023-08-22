@@ -20,6 +20,7 @@ const client = new Client({
 
 client.commands = new Collection();
 client.cooldowns = new Collection();
+client.snipes = new Map();
 
 try {
   client.login(Token).then(() => {
