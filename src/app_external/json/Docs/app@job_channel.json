@@ -1,0 +1,6 @@
+{
+  "Doc": {
+    "Identifier": { "type": "String", "required": true },
+    "Guild_Identifier": { "type": "String", "required": true, "unique": true }
+  }
+}

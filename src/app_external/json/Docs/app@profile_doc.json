@@ -1,0 +1,9 @@
+{
+  "Doc": {
+    "identifier": { "type": "String", "required": true },
+    "pocket": { "type": "Number", "required": true },
+    "bank": { "type": "Number", "required": true },
+    "bank_space": { "type": "Number", "required": true },
+    "inventory": { "type": "Object", "required": true }
+  }
+}
